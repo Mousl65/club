@@ -1,0 +1,413 @@
+body{
+  margin: 10px;
+}
+ .nav-link{
+        font-size: 20px;
+        }
+
+ /*header*/   
+.entete {
+    max-width: 1600px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(104, 193, 235);
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: center; 
+    display:grid;
+    grid-template-rows:auto;
+    grid-gap: 10px;
+}
+@media screen and(max-width:500px){
+ .entete,h1{
+    font-size: 10px;
+ }
+    }
+
+
+.logo{
+  background-color: rgb(148, 193, 214);
+    height: 100px;
+    width: 120px; 
+    margin-left: -165px;
+    margin-top: 10px;
+   
+    } 
+    @media screen and (max-width: 500px){
+      .logo{
+        height: 40px;
+        width: 40px;
+        margin-left: 30px;
+      }
+    }   
+
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+   color:brown;
+   width: 70%;
+   text-align: center;
+  }
+   @media screen and (max-width: 500px){
+    h1{
+      font-size: 25px;
+      margin-top: -100px;
+      margin-left: 50px;
+    } 
+   }
+    
+      img{
+          margin-top: 5px;
+          
+      }
+      .table{
+          padding-right: 50px;
+          background-color: chartreuse;
+      }
+
+      /* acceuil*/
+       .container1,.container2{
+         width: 400px;
+         margin-left: 180px;
+         margin-top: 10px;
+         background-color: rgb(195, 210, 218);
+         border-radius: 10px;
+         font-size: 17px;
+         font-family: Arial, Helvetica, sans-serif;
+         color: rgb(151, 7, 7);
+        }
+        @media screen and (max-width: 500px){
+          .container1,.container2{
+            width: 400px;
+            height:auto;
+          }
+        }
+         .nom1{
+           background-color: rgb(228, 126, 126);
+           border-radius: 10px 10px 0 0;
+           margin: 0;
+           text-align: center;
+           color: azure;
+          }
+          @media screen and (max-width: 500px){
+            h2{
+              font-size: 05px;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
+          .prenom{
+            margin: 5px 10px;
+
+          }
+         
+          .container1{
+            grid-area: a;
+          }
+          .container2{
+            grid-area: b;
+            margin-right:300px;
+          }
+
+          .global{
+            display: grid;
+            grid-template-areas: "a b";
+          }
+           
+          @media screen and (max-width: 500px){
+                .global{
+                  display: grid;
+                  grid-template-areas:
+                   "a a"
+                   "b b";
+                   margin-left: -140px;
+                } 
+           }
+
+   /*information*/      
+ .horaire{
+        width: 600px;
+        margin-left: 380px;
+        
+        display:flex;
+        justify-content:center;
+        grid-area: c;
+      }
+      @media screen and (max-width: 500px){
+        .horaire{
+          width: 300px;
+         margin-left: 250px;
+        }
+      }
+    
+     .Tarif{
+       margin-left: 200px;
+       width: 200px;
+       border-radius: 10px;
+       grid-area: d;
+     }
+     @media screen and (max-width: 500px){
+      .Tarif{
+        margin-left:250px;
+      }
+     }
+
+     .info{
+       text-align: center;
+       color: rgba(179, 13, 179, 0.897);
+       font-weight: bold;
+         
+       
+     }
+     .titre{
+     
+    background-color: #fff;
+        }
+
+        @media screen and (max-width: 500px){
+          .global2{
+            display: grid;
+            grid-template-areas:
+             "c c"
+             "d d";
+             margin-left: -230px;
+          } 
+     }
+/*formulaire*/
+.formulaire{
+    margin-left: 25px;
+    width: 700px;
+    margin-top: 10px;
+    
+}
+
+.row{
+    background-color: aqua;
+   max-width: 1320px;
+   border-radius: 20px;
+}
+#inputEmail6 {
+    margin-left: 47px;
+    width: 500px;
+    margin-bottom: 10px;
+}
+#exampleFormControlTextarea1{
+    width:500px;
+    margin-bottom: 10px;
+    margin-left: 27px;
+}
+#inputNom6{
+    width: 500px;
+    margin-left: 45px;
+    margin-bottom: 10px;
+}
+#inputPrenom6{
+    width: 500px;
+    margin-left: 25px;
+    margin-bottom: 10px; 
+}
+#inputNaissance6{
+    margin-left: 13px;
+    margin-bottom: 10px;
+}
+#inputTelephone6{
+    width: 210px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+.col-12{
+    margin-left: 500px;
+    margin-bottom: 10px;
+
+}
+#exampleFormControlTextarea2{
+    width:500px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+a{
+    padding: 40px;
+    font-size: 40px;
+}
+/* football*/
+.container{
+  background-color: rgb(248, 241, 207);
+  border-radius: 30px;
+  margin-top: 10px;
+  display: grid;
+  grid-auto-rows: minmax(00px,auto);
+  grid-gap:10px;
+  grid-template-areas:
+  " a a b b"
+  " c c d d";
+}
+@media screen and (max-width: 500px){
+  .container{
+    display: grid;
+    grid-template-areas:  
+    "a a"
+    "b b"
+    
+    "c c"
+    "d d";
+  }
+}
+.titre1{
+   margin-top: 70px;
+   text-align: center;
+   background-color: rgb(122, 194, 223);
+   border-radius: 20px;
+   height: 160px;
+   grid-area: a;
+  }
+   @media screen and (max-width: 450px){
+    .titre1{
+      
+      width: 450px;
+      margin-top:0px;
+      height: 20px;
+    }
+    h2, h3{
+      font-size: 5px;
+    }
+    h5{
+      font-size: 10px;
+    }
+      
+   }
+.csp-container{
+  
+  grid-area: b;
+}
+@media screen and (max-width: 500px){
+  .csp-container{
+    width: 250px;
+  }
+}
+.titre2{
+  margin-top: 60px;
+  text-align: center;
+   background-color: rgb(122, 194, 223);
+   border-radius: 20px;
+   height: 160px;
+  grid-area: c;
+}
+@media screen and (max-width: 500px){
+  .titre2{
+   margin-top:10px;
+    height: 100px;
+  }
+}
+
+.salle{
+  grid-area: d;
+}
+@media screen and (max-width: 500px){
+  .salle{
+    margin-top: 20px;
+  }
+}
+.ecole1{
+  margin-left: 80px;
+ 
+}
+
+@media screen and (max-width: 500px){
+  .ecole1{
+    width: 300px;
+   
+  }
+.facebook{
+      font-size: medium;
+}
+}
+
+/*slideshow*/
+.slide-container{
+    width: 450px;
+    padding-top: 10px;
+    }
+    @media screen and (max-width: 500px){
+      .slide-container{
+        width: 400px;
+       
+        margin-left: -60px;
+      }
+    }
+
+.slide-container img{
+      height: 300px;
+      width: 450px;
+      margin-bottom: 20px;
+   }  
+   @media screen and (max-width: 400px){
+    .slide-container img{
+      height: 100px;
+     
+      margin-left: 250px;
+      margin-bottom: 20px;
+   } 
+   img{
+    width: 450px;
+   } 
+    }
+ /*textanimaer*/
+   .dynamic-text {
+    position: relative;
+    display: flex;
+  }
+    .simply {
+      color:#333;
+    }
+  
+    #text-target {
+      display: flex;
+      width: 300px;
+      text-align: left;
+      animation: color 30s alternate infinite;
+      perspective: 200px;
+      transform: translateX(26px);
+    }
+    .word {
+      position: absolute;
+    }
+    @keyframes color {
+      0% {
+        color: red;
+      }
+      50% {
+        color: blue;
+      }
+      100% {
+        color: blue;
+      }
+    }
+    .letter {
+      transform: translateZ(200px);
+    }
+    @keyframes anim {
+      25% {
+        transform: translateZ(0px);
+        opacity: 1;
+      }
+      32% {
+        opacity: 0;
+        transform: translateZ(-280px) translateX(200px);
+      }
+    }
+    .footer{
+      background-color: rgb(209, 226, 109);
+      height: 30PX;
+      text-align: center;
+      border-radius: 20px;
+      border-bottom: 10px;
+    }
+ 
+  
+
+
+
+
+

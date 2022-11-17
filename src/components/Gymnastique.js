@@ -4,6 +4,7 @@ import Slide3 from './Slide3';
 
 const Gymnastique = () => {
     return (
+        <div className='bg2'> 
         <div className="container">
         <div className="titre1">
         <h2>Ecole de gymnastique au centre socio-sportif Mly El Hassan a Haouzia Kenitra</h2>
@@ -27,6 +28,7 @@ const Gymnastique = () => {
               
               
          </a>
+        </div>
         </div>
         </div>
     )

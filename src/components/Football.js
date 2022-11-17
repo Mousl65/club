@@ -2,9 +2,14 @@ import React from 'react'
 import Slideshow from './Slide';
 import Slide2 from './Slide2';
 
+
 const Football = () => {
     return (
+        <div className='bg'>
+         
 <div className="container">
+         
+
         <div className="titre1">
            <h2>Ecole de football au centre socio-sportif Mly El Hassan a Haouzia Kenitra</h2>
            <h3>Date de creation 2011</h3></div> 
@@ -39,6 +44,7 @@ const Football = () => {
               
               
          </a>
+        </div>
         </div>
  </div>
  

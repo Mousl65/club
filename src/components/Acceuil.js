@@ -4,9 +4,9 @@ import  Header from '../Header';
 const Acceuil = () => {
 
         return (
- <div>
- <Header />
-
+          <div>
+          <Header />
+          <div className='bg3'>
  <div className="global">
     <div className="container1">
      <div className="nom1">
@@ -32,61 +32,129 @@ const Acceuil = () => {
   </div>
  <h2>Localisation</h2>
     <br></br>
-    <div className="info">
-       <h2>Informations pratiques divers</h2>
-    </div>
+
+    <div className='infopratique'>
+        <h2>Informations pratiques divers</h2>
+     </div>
+     <br></br>
+
+ <div className='information'>
     
-    <br></br>
-    <div className='global2'>
-<div className="horaire">
-    
-    <table className="table">
+  <div className='info1'>
+
+   <div className='horaire'> 
+     <table className="table table-dark tarif">
+     <thead>
+      <div className="titre3">
+        <h3>Horaires au Centre <br></br> Mly Elhassan Haouzia </h3>
+      </div>
+    </thead>
     <thead>
-    <div className="titre">
-    <tr>
-      <h3>Horaires </h3>
-      </tr>
-    </div>
-    <tr>
-    
-      <th scope="col">Disciplines</th>
-      <th scope="col">Jours</th>
+     <tr>
+      <th scope="col"></th>
+      <th scope="col">jours</th>
       <th scope="col">Heures</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr className="table-success">
-      <th scope="row">Football</th>
-      <td>Samedi</td>
-      <td>13h à 17h</td>
+     </tr>
+      
      
+  </thead>
+   <tbody>
+    <tr>
+      <th scope="col">Football</th>
+      <td colspan="1" className="table-active">Samedi et Dimanche</td>
+      <td colspan="1" className="table-active">14h à 16h</td>
+ 
     </tr>
-    <tr className="table-success">
-      <th scope="row"></th>
-      <td>Dimanche</td>
-      <td>10h à 14h</td>
-      
+  
+     <tr>
+       <th scope="row">Gymnastique</th>
+       <td colspan="1" className="table-active">Samedi et Dimanche</td>
+       <td colspan="1" className="table-active">10h a 13h</td>
+    
     </tr>
-    <tr className="table-warning">
-      <th scope="row">Gymnastique</th>
-      <td>Samedi</td>
-      <td>10h à 14h</td>
-      
-    </tr>
-    <tr className="table-warning">
-      <th scope="row"></th>
-      <td>Dimanche</td>
-      <td>10h à 14h</td>
-      
-    </tr>
-  </tbody>
+
+
+   </tbody>
 </table>
+ </div>
+   <div className='Tarif'> 
+     <table className="table table-dark tarif">
+      <thead>
+    <div className="titre3">
+       <h3>Tarifs au Centre <br></br> Mly Elhassan Haouzia</h3>
+    </div>
+ </thead>
+   <thead>
+     <tr>
+      <th scope="col"></th>
+      <th scope="col">Adhesion</th>
+      <th scope="col">Mensualité</th>
+    </tr>
+      
+ </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Football</th>
+      <td colspan="1" className="table-active">100 dh</td>
+      <td colspan="1" className="table-active">120 dh</td>
+   </tr>
+  
+    <tr>
+       <th scope="row">Gymnastique</th>
+       <td colspan="1" className="table-active">100 dh</td>
+       <td colspan="1" className="table-active">100 dh</td>
+    
+   </tr>
+</tbody>
+</table>
+
 </div>
-<div className='Tarif'> 
+</div>
+
+<div className='info2'>
+
+   <div className='horaire2'> 
+    <table className="table table-dark tarif">
+      <thead>
+     <div className="titre4">
+          <h3>Horaires a la salle couverte <br></br> Oulade Mbarak </h3>
+     </div>
+ </thead>
+   <thead>
+       <tr>
+      
+         <th scope="col"></th>
+         <th scope="col">jours</th>
+         <th scope="col">Heures</th>
+     
+      </tr>
+</thead>
+   <tbody>
+     <tr>
+      <th scope="col">Football</th>
+      <td colspan="1" className="table-active">Samedi</td>
+      <td colspan="1" className="table-active">13h à 16h</td>
+    </tr>
+ 
+<tr>
+<th scope="col"></th>
+  <td colspan="1" className="table-active">Dimanche</td>
+  <td colspan="1" className="table-active">10h à 13h</td>
+ 
+</tr>
+  
+  
+
+
+</tbody>
+</table>
+
+</div>
+<div className='Tarif2'> 
 <table className="table table-dark tarif">
 <thead>
-<div className="titre">
-<h3>Tarifs</h3>
+<div className="titre4">
+<h3>Tarifs  a la salle couverte <br></br> Oulade Mbarak</h3>
 </div>
  </thead>
  <thead>
@@ -104,18 +172,15 @@ const Acceuil = () => {
   <td colspan="1" className="table-active">100 dh</td>
 </tr>
   
-  <tr>
-    <th scope="row">Gymnastique</th>
-    <td colspan="1" className="table-active">100 dh</td>
-    <td colspan="1" className="table-active">100 dh</td>
-    
- </tr>
+ 
 </tbody>
 </table>
 
 </div>
 </div>
-  <br></br>
+
+</div>
+  <br></br> 
   <div className='facebook'>
    <h2>Notre page facebook</h2></div>
    <div className="socialNetwork">
@@ -125,6 +190,7 @@ const Acceuil = () => {
            
            
       </a>
+     </div>
      </div>
    </div>
     )

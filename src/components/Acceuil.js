@@ -30,7 +30,7 @@ const Acceuil = () => {
     </div>
    </div>
   </div>
- <h2>Localisation</h2>
+ 
     <br></br>
 
     <div className='infopratique'>

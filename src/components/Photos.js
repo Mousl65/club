@@ -3,9 +3,9 @@ import Slideshow from './Slide';
 import Slide2 from './Slide2';
 
 
-const Football = () => {
+const Photos = () => {
     return (
-        <div className='bg'>
+ <div className='bg'>
          
 <div className="container">
          
@@ -53,4 +53,4 @@ const Football = () => {
     )
 }
 
-export default Football
+export default Photos;

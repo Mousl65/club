@@ -30,9 +30,11 @@
   background-position: center;
   background-attachment: fixed;
 }
+ 
  .nav-link{
         font-size: 20px;
         font-weight: bold;
+       
      
         }
         @media screen and (max-width: 500px){
@@ -63,10 +65,10 @@
 
 .logo{
   background-color: rgb(148, 193, 214);
-    height: 100px;
-    width: 120px; 
+    height: 90px;
+    width: 100px; 
     margin-left: -165px;
-    margin-top: 10px;
+    margin-top: 70px;
    
     } 
     @media screen and (max-width: 500px){
@@ -133,9 +135,11 @@ h1 {
               font-size: 14px;
             }
           }
-          .prenom{
+          .prenom {
             margin: 5px 10px;
-
+          }
+          .prenom p{
+            color: #1a03ad;
           }
          
           .container1{
@@ -296,10 +300,11 @@ h1 {
       }
 
      }
-    .socialNetwork i{
-      margin-left: 120px;
+    .socialNetwork {
+      margin-left: 50px;
       font-size: 20px;
       font-weight: bold;
+     
     }
        
     
@@ -313,6 +318,7 @@ h1 {
 
 .form1{
  margin: 10px;
+ margin-top: 70px;
   background-color: rgb(248, 228, 118);
   border: 03px solid rgb(91, 8, 246) ;
   border-radius: 10px;
@@ -375,7 +381,7 @@ h1 {
 .container{
   
   border-radius: 30px;
-  margin-top: 10px;
+  margin-top: 60px;
   display: grid;
   grid-auto-rows: minmax(00px,auto);
   grid-gap:10px;
@@ -417,6 +423,11 @@ h1 {
     }
       
    }
+   .titre h5{
+    font-size: 20px;
+    color: aqua;
+   
+   }
 .csp-container{
   
   grid-area: b;
@@ -453,15 +464,26 @@ h1 {
   margin-left: 80px;
  
 }
-
+.facebook h5{
+  font-size: 20px;
+  color: aqua;
+}
 @media screen and (max-width: 500px){
   .ecole1{
     width: 300px;
    
   }
-.facebook{
-      font-size: medium;
+.facebook h5{
+  margin-right: 50px;
+      font-size: 12px;
+      color: aqua;
 }
+
+}
+.socialNetwork i{
+  font-size: 24px;
+  margin-left: -10px;
+  color: rgb(79, 127, 240);
 }
 
 /*slideshow*/

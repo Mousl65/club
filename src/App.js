@@ -2,7 +2,10 @@ import React from 'react';
 import {Switch,Route} from 'react-router-dom';
 import Menu from './components/Menu';
 import Acceuil from   './components/Acceuil';
-import Football from './components/Football';
+import Photos from './components/Photos';
+import Videos from './components/Videos';
+import Matchs from './components/Matchs';
+import Publications from './components/Publications';
 import  Gymnastique from './components/Gymnastique';
 import Contact from './components/Contact';
 import ErrorPage from './components/ErrorPage'
@@ -18,7 +21,10 @@ function App() {
 
   <Switch>
        <Route exact path="/" component={Acceuil} />
-       <Route path="/football" component={Football} />
+       <Route path="/photos" component={Photos} />
+       <Route path="/videos" component={Videos} />
+       <Route path="/matchs" component={Matchs} />
+       <Route path="/publications" component={Publications} />
        <Route path="/gymnastique" component={Gymnastique} />
        <Route path="/contact" component={Contact} />
        <Route strict component= {ErrorPage} />

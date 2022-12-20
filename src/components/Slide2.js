@@ -44,6 +44,12 @@ import csp40 from '../image2/csp40.jpg';
 import csp41 from '../image2/csp41.jpg';
 import csp42 from '../image2/csp42.jpg';
 import csp43 from '../image2/csp43.jpg';
+import kac1 from '../image2/kac1.jpg';
+import kac2 from '../image2/kac2.jpg';
+import kac3 from '../image2/kac3.jpg';
+import kac4 from '../image2/kac4.jpg';
+import kac5 from '../image2/kac5.jpg';
+
 
 
 
@@ -63,7 +69,10 @@ const slideImages = [
     'image2/csp13.jpg', 'image2/csp29.jpg', 
     'image2/csp14.jpg', 'image2/csp30.jpg', 
     'image2/csp15.jpg', 'image2/csp31.jpg', 
-    'image2/csp16.jpg', 'image2/csp32.jpg',]; 
+    'image2/csp16.jpg', 'image2/csp32.jpg',
+    'image2/kac1.jpg', 'image2/kac2.jpg',
+    'image2/kac3.jpg', 'image2/kac4.jpg',
+    'image2/kac5.jpg',]; 
 
     const Slide2 = () => {
         return (
@@ -284,7 +293,31 @@ const slideImages = [
                 <img src={csp43} alt="img2" />
               </div>
             </div>
-            
+            <div className="each-slide">
+            <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+              <img src={kac1} alt="img2" />
+            </div>
+          </div>
+          <div className="each-slide">
+          <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+            <img src={kac2} alt="img2" />
+          </div>
+        </div>
+        <div className="each-slide">
+        <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+          <img src={kac3} alt="img2" />
+        </div>
+      </div>
+      <div className="each-slide">
+      <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+        <img src={kac4} alt="img2" />
+      </div>
+    </div>
+    <div className="each-slide">
+    <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+      <img src={kac5} alt="img2" />
+    </div>
+  </div>
             
            </Slide>
               </div>

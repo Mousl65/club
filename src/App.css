@@ -604,6 +604,62 @@ h1 {
       background-attachment: fixed; 
     }
     
+    /*match*/
+   
+    .match1 img,.match2 img,.match3 img,.match4 img{
+      width: 400px;
+      height: 200px;
+    
+    }
+
+    .match{
+      margin-left: 10px;
+      margin-top: 63px;
+    }
+
+      .tapi{ 
+      width: 100%;
+      height: 100%;
+      background-image: url('image4/foot10.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; 
+    }
+    .tournoi h4{
+      color: white;
+      width: 300px;
+      height: 150px;
+      margin: 05px;
+      margin-top: 30px;
+      border: 10px solid white;
+      border-radius: 10px;
+      text-align: center;
+      
+    }
+    .match1,.match3{
+      display: flex;
+      flex-direction: row;
+    }
+    @media screen  and (max-width:500px) {
+      .match1,.match3{
+        display: flex;
+        flex-direction: column;
+      }
+    }
+       
+    
+
+    .doha{
+      color: white;
+      width: 300px;
+      height: 170px;
+      margin: 05px;
+      margin-top: 20px;
+      border: 10px solid white;
+      border-radius: 10px;
+      text-align: center;
+    }
 
 
 

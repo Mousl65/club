@@ -1,6 +1,7 @@
 import React from 'react'
 import {Slide} from 'react-slideshow-image';
-import 'react-slideshow-image/dist/styles.css'
+import 'react-slideshow-image/dist/styles.css';
+import csp0 from '../image2/csp0.jpg';
 import csp1 from '../image2/csp1.jpg';
 import csp2 from '../image2/csp2.jpg';
 import csp3 from '../image2/csp3.jpg';
@@ -53,7 +54,7 @@ import kac5 from '../image2/kac5.jpg';
 
 
 
-const slideImages = [
+const slideImages = [  'image2/csp0.jpg',
     'image2/csp1.jpg', 'image2/csp17.jpg', 'image2/csp33.jpg',
     'image2/csp2.jpg', 'image2/csp18.jpg', 'image2/csp34.jpg',
     'image2/csp3.jpg', 'image2/csp19.jpg', 'image2/csp35.jpg',
@@ -78,6 +79,11 @@ const slideImages = [
         return (
           <div className="slide-container">
             <Slide>
+            <div className="each-slide">
+            <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+              <img src={csp0} alt="img1" />
+            </div>
+          </div>
               <div className="each-slide">
                 <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
                   <img src={csp1} alt="img1" />

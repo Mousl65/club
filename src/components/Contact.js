@@ -73,7 +73,7 @@ const handleSubmit =(e)=>{
       </FloatingLabel>
     <FloatingLabel
       controlId="floatingInput"
-      label="Email address"
+      label="Email"
       className="mb-2 mt-2 w-50 p-2 " 
     >
       <Form.Control onChange={e=>setEmail(e.target.value)}
@@ -87,10 +87,10 @@ const handleSubmit =(e)=>{
          as="textarea" value={message} rows={3} />
       </Form.Group>
       <Form.Group controlId="formFile" className="mb-2 mt-2 w-50 p-2">
-        <Form.Label>Saisir un fichier</Form.Label>
+        <Form.Label onChange={e=>setFichier(e.target.value)} value={fichier}>Saisir un fichier</Form.Label>
         <Form.Control type="file" />
         </Form.Group>
-        <Form.Select className=' p-2 m-2 mb-2 mt-2 w-50' onChange={e=>setMessage(e.target.value)}
+        <Form.Select className=' p-2 m-2 mb-2 mt-2 w-50' onChange={e=>setDiscipline(e.target.value)}
         value={discipline} aria-label="Default select example">
         <option>Choisir une discipline sportive</option>
         <option value="1">Football</option>

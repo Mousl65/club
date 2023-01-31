@@ -10,12 +10,12 @@ const Menu = () => {
       <Navbar.Collapse id="navbarScroll">
           <Nav>
               <NavLink  eventKey="1" as={Link} to="/">Acceuil</NavLink>
-              <NavDropdown title="Football" id="nav-dropdown">
+              <NavDropdown  title="Football" id="nav-dropdown">
               <NavDropdown.Item eventKey="4.1" as={Link} to="/photos">Photos</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.2" as={Link} to='/videos'>Videos</NavDropdown.Item>
               <NavDropdown.Item eventKey="4.3" as={Link} to='/matchs'>Matchs</NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item eventKey="4.4" as={Link} to='/publications'>Publications</NavDropdown.Item>
+             
             </NavDropdown>
               <NavLink  eventKey="3" as={Link} to="/gymnastique">Gymnastique</NavLink>
               <NavLink  eventKey="4" as={Link} to="/contact">Contact</NavLink>

@@ -11,9 +11,9 @@
 
 .bg2 { 
   margin-top: 0px;
-  width: 90%;
-  height: 90%;
-  background-image: url('image4/gym9.jpg');
+  width: 100%;
+  height: 100%;
+  background-image: url('image4/gym16.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,6 +55,7 @@
     display:grid;
     grid-template-rows:auto;
     grid-gap: 10px;
+    margin-bottom: -60px;
 }
 @media screen and (max-width:400px){
  .entete,h1{
@@ -81,7 +82,7 @@
 
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
+   font-family: Arial, Helvetica, sans-serif;
    color:brown;
    width: 70%;
    text-align: center;
@@ -102,6 +103,94 @@ h1 {
           padding-right: 50px;
           background-color: chartreuse;
       }
+
+      /*Actualitées*/
+     
+
+      .publication{
+        
+        width: 100%;
+        height: 100%;
+        background-image: url('image4/foot10.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; 
+        margin-bottom: -10px;
+      }
+      .publication h1{
+        margin-left: -10px;
+        color: rgb(249, 21, 21);
+        text-decoration: underline;
+      }
+      .slide-container2{
+        width: 500px;
+        height: 400px;
+       margin-left: 500px;
+       margin-bottom: 10px;
+       margin-top: -60px;
+      }
+      .slide-container2 img{
+        margin-bottom: -10px;
+        margin-top: 05px;
+      }
+
+      @media screen and (max-width:500px) {
+        .slide-container2{
+          margin-left: 20px;
+         
+          width: 450px;
+          height: 350px;
+        }
+      }
+      .slide-container2 img{
+        height: 400px;
+        width: 500px;
+      }
+      @media screen and (max-width:500px){
+        .slide-container2 img{
+          width: 450px;
+          height: 345px;
+          margin-bottom: -04px;
+        }
+      }
+      .tournoi2 h4{
+        width: 400px;
+        color: white;
+        border: 2px solid rgb(239, 14, 14);
+        border-radius: 20px;
+        grid-area: A;
+        margin-left: -350px;
+        margin-top: 70px;
+        text-align: center;
+      } 
+     .slide4{
+      grid-area: B;
+      margin-top: 60px;
+      margin-left: -700px;
+     }
+      .publication{
+       
+        display: grid;
+       grid-template-areas: 'A A B B';
+    }
+    @media screen and (max-width:500px){
+      .publication{
+        display: grid;
+        grid-template-areas:
+         "A A"
+         "B B";
+         justify-content: center;
+         align-content: center;
+      }
+      .tournoi2{
+        margin-left: 250px;
+      }
+      .slide4{
+        margin-left: -10px;
+      }
+     
+    }
 
       /* acceuil*/
        .container1,.container2{
@@ -128,8 +217,8 @@ h1 {
            color: azure;
           }
           @media screen and (max-width: 500px){
-            h2{
-              font-size: 05px;
+           .nom1 h2{
+              font-size: 30px;
             }
             p{
               font-size: 14px;
@@ -330,6 +419,13 @@ h1 {
     font-weight: bold;
     
 }
+@media screen and (max-width:500px){
+  .formulaire h2{
+    font-size: 35px;
+    margin-left: -10px;
+    text-align: center;
+  }
+}
 
 .row{
     background-color: aqua;
@@ -372,11 +468,7 @@ h1 {
 
 }
 
-/* football*/
-
-
-
-
+/* football photos*/
 
 .container{
   
@@ -408,16 +500,14 @@ h1 {
    height: 160px;
    grid-area: a;
   }
-   @media screen and (max-width: 450px){
+   @media screen and (max-width: 500px){
     .titre1{
       
-      width: 450px;
-      margin-top:0px;
-      height: 20px;
+      width: 400px;
+      margin-top:10px;
+      height: 150px;
     }
-    h2, h3{
-      font-size: 5px;
-    }
+   
     h5{
       font-size: 10px;
     }
@@ -448,7 +538,8 @@ h1 {
 @media screen and (max-width: 500px){
   .titre2{
    margin-top:10px;
-    height: 100px;
+   width: 400px;
+    height: 140px;
   }
 }
 
@@ -483,7 +574,7 @@ h1 {
 .socialNetwork i{
   font-size: 24px;
   margin-left: -10px;
-  color: rgb(79, 127, 240);
+  color: rgb(8, 50, 149);
 }
 
 /*slideshow*/
@@ -552,7 +643,7 @@ h1 {
     @keyframes anim {
       25% {
         transform: translateZ(0px);
-        opacity: 1;
+        opacity:1;
       }
       32% {
         opacity: 0;
@@ -592,6 +683,7 @@ h1 {
         display: flex;
         flex-direction: column;
       }
+
     }
     .planc{
       margin-top: -05px;
@@ -606,9 +698,10 @@ h1 {
     
     /*match*/
    
-    .match1 img,.match2 img,.match3 img,.match4 img{
+    .match1 img,.match2 img,.match3 img,.match4 img ,.videoPlayer{
       width: 400px;
       height: 200px;
+      border: 05px solid white;
     
     }
 
@@ -632,17 +725,17 @@ h1 {
       height: 150px;
       margin: 05px;
       margin-top: 30px;
-      border: 10px solid white;
+      border: 05px solid white;
       border-radius: 10px;
       text-align: center;
       
     }
-    .match1,.match3{
+    .match1,.match3,.voir{
       display: flex;
       flex-direction: row;
     }
     @media screen  and (max-width:500px) {
-      .match1,.match3{
+      .match1,.match3,.voir{
         display: flex;
         flex-direction: column;
       }
@@ -656,11 +749,29 @@ h1 {
       height: 170px;
       margin: 05px;
       margin-top: 20px;
-      border: 10px solid white;
+      border: 05px solid white;
       border-radius: 10px;
       text-align: center;
     }
-
-
-
+    .voir{
+      margin-top: 10px;
+      margin-bottom: 25px;
+     
+    }
+    .salleCouverte{
+      color: white;
+      width: 300px;
+      height: 170px;
+      margin: 05px;
+      margin-top: 20px;
+      border: 05px solid white;
+      border-radius: 10px;
+      text-align: center;
+    }
+    @media screen and (max-width:500px) {
+      .salleCouverte{
+        margin-top: 10px;
+      }
+    }
+   
 

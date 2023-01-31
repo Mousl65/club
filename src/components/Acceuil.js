@@ -1,11 +1,13 @@
 import React from 'react';
 import  Header from '../Header';
+import  Actualites from '../components/Actualites';
 
 const Acceuil = () => {
 
         return (
           <div>
           <Header />
+          <Actualites />
           <div className='bg3'>
  <div className="global">
     <div className="container1">

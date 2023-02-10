@@ -19,6 +19,7 @@ const Menu = () => {
             </NavDropdown>
               <NavLink  eventKey="3" as={Link} to="/gymnastique">Gymnastique</NavLink>
               <NavLink  eventKey="4" as={Link} to="/contact">Contact</NavLink>
+              <NavLink  eventKey="5" as={Link} to="/boutique">Boutique</NavLink>
 
           </Nav>
       </Navbar.Collapse>     

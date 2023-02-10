@@ -1,6 +1,6 @@
 import React from 'react';
 import Slide3 from './Slide3';
-
+import ButtonsBottom from '../components/ButtonsBottom'
 
 const Gymnastique = () => {
     return (
@@ -17,16 +17,15 @@ const Gymnastique = () => {
             <h5>Photos des séances d'entrainements et des évennements sportifs   </h5> 
          </div> 
         </div>
-
-        <br></br>
-        <div className='facebook'> 
+       <div className='boutonGym'>
+          <ButtonsBottom   right={'/contact'}  left={'/matchs'}  />
+        </div>
+   <div className='facebookgym'> 
       <h5>Pour voir plus de photos consultez notre page facebook</h5></div>
-      <div className="socialNetwork">
+      <div className="socialNetworkgym">
          <a href="https://web.facebook.com/KAC-Sport-pour-Tous-1538473449710613"target="_blank"
           rel="noopener noreferrer">
-          <i className="fab fa-facebook"> Facebook</i>
-              
-              
+          <i className="fab fa-facebook"> Facebook</i>        
          </a>
         </div>
         </div>

@@ -4,6 +4,7 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
+import ButtonsBottom from '../components/ButtonsBottom';
 
 function Contact() {
 
@@ -38,6 +39,7 @@ const handleSubmit =(e)=>{
 };
 
   return (
+    <div> 
 <form onSubmit={handleSubmit} className='form1'>
       <div className='formulaire'>
           <h2>Formulaire d'inscription</h2>
@@ -107,7 +109,13 @@ const handleSubmit =(e)=>{
     />
   </Form.Group>
   <Button className='P-2 m-2  mb-2 ' type="submit">Envoyez</Button>
+
   </form>
+ 
+  <div> 
+  <ButtonsBottom   right={'/boutique'}  left={'/gymnastique'}  />
+  </div>
+  </div>
 );
 }
   

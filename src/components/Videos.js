@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
-
+import ButtonsBottom from '../components/ButtonsBottom'
 
 function Videos() {
   const kac1='https://www.facebook.com/100063700974241/videos/2162342967409034/'
@@ -34,7 +34,7 @@ function Videos() {
         width='250px' height='150px'
   />
   </div> 
-
+  <ButtonsBottom   right={'/matchs'}  left={'photos'}  />
     
     <div className='facebook'> 
     <h5>Pour voir plus de videos consultez notre page facebook</h5></div>

@@ -39,10 +39,10 @@
         }
         @media screen and (max-width: 500px){
           .nav-link{
-            font-size: 15px;
+            font-size: 13px;
           }
         }
-
+      
  /*header*/   
 .entete {
     max-width: 1600px;
@@ -199,6 +199,7 @@ h1 {
          margin-top: 10px;
          background-color: rgb(195, 210, 218);
          border-radius: 10px;
+         border: 2px dashed rgb(200, 11, 20);
          font-size: 17px;
          font-family: Arial, Helvetica, sans-serif;
          color: rgb(151, 7, 7);
@@ -228,7 +229,8 @@ h1 {
             margin: 5px 10px;
           }
           .prenom p{
-            color: #1a03ad;
+            color: black;
+            font-weight: bold;
           }
          
           .container1{
@@ -407,7 +409,7 @@ h1 {
 
 .form1{
  margin: 10px;
- margin-top: 70px;
+ margin-top: 80px;
   background-color: rgb(248, 228, 118);
   border: 03px solid rgb(91, 8, 246) ;
   border-radius: 10px;
@@ -650,9 +652,24 @@ h1 {
         transform: translateZ(-280px) translateX(200px);
       }
     }
+
+    /*footer*/
+   .socialNetwork2 ul  {
+     list-style-type: none;
+     display: flex;
+     flex-direction:row;
+    justify-content:space-evenly;
+    }
+    .socialNetwork2 li a{
+      color: rgb(50, 13, 237);
+      font-size: 30px;
+      transform: scale(2,3);
+      
+    }
+  
     .footer{
-      background-color: rgb(209, 226, 109);
-      height: 30PX;
+      background-color: rgb(151, 158, 159);
+      
       text-align: center;
       border-radius: 20px;
       border-bottom: 10px;
@@ -774,4 +791,96 @@ h1 {
       }
     }
    
+    /*BOUTIQUE*/
+
+    .tenu{
+      width: 400px;
+      margin: 20px;
+      margin-top: 60px;
+     
+      }
+      .tenu img{
+        width: 350px;
+        height: 600px;
+        border: 3px dashed rgb(242, 10, 10);
+        border-radius: 10px;
+      }
+      .tenu h3{
+        text-align: center;
+        color: rgb(7, 100, 30);
+        margin-left: -20px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      }
+/*buttonsbottom*/
+
+.scroll-bottom {
+  position: absolute;
+  left: 50%;
+  color:#f4ebec;
+  font-size: 1.5rem;
+ }
+
+ .sb-main {
+    display: grid;
+    grid-template-columns: 20px 100px 20px;
+    grid-template-areas: 'a b c';
+    align-items: center;
+    justify-items: center;
+    width: 180px;
+     }
+    .left {
+      grid-area: a;
+    }
+    p {
+      grid-area: b;
+    }
+    .right {
+      grid-area: c;
+    }
+  span {
+      font-size: 2rem;
+      padding: 0 1rem;
+      display: inline-block;
+      color: darkred;
+     }
+     .photoscroll{
+      margin-left: 50px;
+      padding: 20px;
+      margin-top: -60px;
+      
+     }
+     .boutonGym{
+      margin-top: -0px;
+     }
+     @media screen and (max-width:500px) {
+      .boutonGym{
+        margin-top: -20px;
+        margin-left: 57px;
+      }
+     }
+     .facebookgym{
+      width: 300px;
+      margin-left:-250px;
+      
+     }
+     @media screen and (max-width:500px){
+      .facebookgym{
+        margin-left: -448px;
+       
+      }
+     }
+     .socialNetworkgym i{
+      margin-left: -300px;
+      font-size: 30px;
+     }
+     @media screen and (max-width:500px){
+      .socialNetworkgym i{
+        margin-left: 300px;
+        font-size: 20px;
+        
+      }
+     }
+    
+   
+  
 

@@ -5,6 +5,7 @@ import Acceuil from   './components/Acceuil';
 import Photos from './components/Photos';
 import Videos from './components/Videos';
 import Matchs from './components/Matchs';
+import Boutique from './components/Boutique'
 
 import  Gymnastique from './components/Gymnastique';
 import Contact from './components/Contact';
@@ -27,6 +28,7 @@ function App() {
       
        <Route path="/gymnastique" component={Gymnastique} />
        <Route path="/contact" component={Contact} />
+       <Route path="/boutique" component={Boutique} />
        <Route strict component= {ErrorPage} />
    </Switch>
  

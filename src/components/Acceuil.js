@@ -1,8 +1,17 @@
 import React from 'react';
 import  Header from '../Header';
 import  Actualites from '../components/Actualites';
+import { gsap } from 'gsap';
+import ButtonsBottom from '../components/ButtonsBottom'
 
 const Acceuil = () => {
+  const onEnter = ({ currentTarget }) => {
+    gsap.to(currentTarget, { backgroundColor: "#e77614", scale: 1.2 });
+  };
+  
+  const onLeave = ({ currentTarget }) => {
+    gsap.to(currentTarget, { backgroundColor: "#28a92b", scale: 1 });
+  };
 
         return (
           <div>
@@ -10,7 +19,7 @@ const Acceuil = () => {
           <Actualites />
           <div className='bg3'>
  <div className="global">
-    <div className="container1">
+    <div className="container1" onMouseEnter={onEnter} onMouseLeave={onLeave}>
      <div className="nom1">
        <h2>Historique du club</h2>
      </div>
@@ -21,7 +30,7 @@ const Acceuil = () => {
        au fil des ans nous avons developper plusieurs projet sportves à savoir la creation des écoles de Football,de gymnastique...</p>
     </div>
   </div>
-    <div className="container2">
+    <div className="container2" onMouseEnter={onEnter} onMouseLeave={onLeave}>
       <div className="nom1">
          <h2>Présentation du club</h2>
       </div>
@@ -40,11 +49,11 @@ const Acceuil = () => {
      </div>
      <br></br>
 
- <div className='information'>
+ <div className='information'> 
     
-  <div className='info1'>
+  <div className='info1'   >
 
-   <div className='horaire'> 
+   <div className='horaire'  onMouseEnter={onEnter} onMouseLeave={onLeave}> 
      <table className="table table-dark tarif">
      <thead>
       <div className="titre3">
@@ -79,7 +88,7 @@ const Acceuil = () => {
    </tbody>
 </table>
  </div>
-   <div className='Tarif'> 
+   <div className='Tarif'  onMouseEnter={onEnter} onMouseLeave={onLeave}> 
      <table className="table table-dark tarif">
       <thead>
     <div className="titre3">
@@ -115,7 +124,7 @@ const Acceuil = () => {
 
 <div className='info2'>
 
-   <div className='horaire2'> 
+   <div className='horaire2'  onMouseEnter={onEnter} onMouseLeave={onLeave}> 
     <table className="table table-dark tarif">
       <thead>
      <div className="titre4">
@@ -142,17 +151,12 @@ const Acceuil = () => {
 <th scope="col"></th>
   <td colspan="1" className="table-active">Dimanche</td>
   <td colspan="1" className="table-active">10h à 13h</td>
- 
 </tr>
-  
-  
-
-
 </tbody>
 </table>
 
 </div>
-<div className='Tarif2'> 
+<div className='Tarif2'  onMouseEnter={onEnter} onMouseLeave={onLeave}> 
 <table className="table table-dark tarif">
 <thead>
 <div className="titre4">
@@ -183,6 +187,8 @@ const Acceuil = () => {
 
 </div>
   <br></br> 
+  <ButtonsBottom   right={'/photos'}  left={'/boutique'}  />
+
   <div className='facebook'>
    <h2>Notre page facebook</h2></div>
    <div className="socialNetwork">

@@ -1,7 +1,7 @@
 import React from 'react'
 import Slideshow from './Slide';
 import Slide2 from './Slide2';
-
+import ButtonsBottom from '../components/ButtonsBottom'
 
 const Photos = () => {
     return (
@@ -33,8 +33,11 @@ const Photos = () => {
                
             </div>
       </div>
-
       <br></br>
+       <div className='photoscroll'>
+       <ButtonsBottom   right={'/videos'}  left={'/'}  />
+       </div>
+       <br></br>
       <div className='facebook'>
       <h5>Pour voir plus de photos consultez notre page facebook</h5></div>
       <div className="socialNetwork">

@@ -4,7 +4,7 @@ import match2 from './image5/match2.jpg';
 import match3 from './image5/match3.jpg';
 import match4 from './image5/match4.jpg';
 import ReactPlayer from 'react-player';
-
+import ButtonsBottom from '../components/ButtonsBottom'
 function Matchs() {
      const matchv ='https://www.facebook.com/100063700974241/videos/5766878316733973'
   return (
@@ -39,6 +39,8 @@ function Matchs() {
  </div>
  </div>
      </div>
+     <br></br>
+     <ButtonsBottom   right={'/gymnastique'}  left={'/videos'}  />
      <div className='facebook'> 
     <h5>Pour voir plus de videos et photos consultez notre page facebook</h5></div>
     <div className="socialNetwork">
